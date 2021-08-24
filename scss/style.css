@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --Primary-clr: #8100FF;
+  --Roboto: 'Roboto', sans-serif;
+  --Poppins: 'Poppins', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .container-fluid {
+  padding-top: 5px;
+  padding-right: 50px;
+}
+
+.navbar .container-fluid .navbar-brand {
+  text-transform: uppercase;
+  font-family: var(--Roboto);
+  font-weight: 800;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.navbar .container-fluid .collapse ul li {
+  margin-right: 25px;
+}
+
+.navbar .container-fluid .collapse ul li a.btn-outline-dark {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 780px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero .left {
+  width: 50%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 780px) {
+  .hero .left {
+    padding: 10px 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero .left {
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 464px) {
+  .hero .left {
+    padding: 0px;
+  }
+}
+
+.hero .right {
+  width: 50%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 780px) {
+  .hero .right {
+    padding: 20px 50px;
+    width: 100%;
+  }
+}
+
+.hero h1 {
+  color: var(--Primary-clr);
+  font-family: var(--Poppins);
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    width: 80px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero h1 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero h1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero p {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero p {
+    width: 400px;
+  }
+}
+
+.hero button {
+  background: var(--Primary-clr);
+  border-color: var(--Primary-clr);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.hero button:hover {
+  background: #7800f0;
+}
+
+.hero button:focus {
+  background: #7800f0;
+}
+
+.hero img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

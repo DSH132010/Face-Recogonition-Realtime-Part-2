@@ -1,0 +1,153 @@
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+body,
+html{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root{
+    --Primary-clr: #8100FF;
+    --Roboto: 'Roboto', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+    width: 100%;
+
+    .container-fluid{
+        padding-top:5px;
+        // padding-left: 50px;
+        padding-right: 50px;
+
+        // @media (max-width:700px) {
+        //     padding-left: 50px;
+        // }
+
+        .navbar-brand{
+            text-transform: uppercase;
+            font-family: var(--Roboto);
+            font-weight: 800;
+            width: max-content;
+        }
+
+
+        .collapse{
+            ul{
+                li{
+                    margin-right: 25px;
+
+                    a.btn-outline-dark{
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.hero{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+
+    @media (max-width:780px) {
+        flex-direction: column;
+    }
+
+    .left{
+        width: 50%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+
+        @media (max-width:780px) {
+            padding: 10px 50px;
+            width: 100%;
+        }
+        
+
+        @media (max-width:320px) {
+            padding: 0px 15px;
+        }
+
+        @media (max-width:464px) {
+            padding: 0px;
+        }
+    }
+    
+    .right{
+        width: 50%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+
+        @media (max-width:780px) {
+            padding: 20px 50px;
+            width: 100%;
+        }
+
+    }
+
+
+    h1{
+        color:var(--Primary-clr);
+        font-family: var(--Poppins);
+        font-weight: bold;
+
+        @media (min-width:1024px) {
+            width: 80px;
+        }
+
+        @media (min-width:1000px) {
+            width: 400px;
+        }
+
+        @media (max-width:780px) {
+            width: 100%;
+        }
+    }
+
+
+    p{
+        @media (min-width:1024px) {
+            width: 400px;
+        }
+
+        @media (min-width:1000px) {
+            width: 400px;
+        }
+
+
+    }
+
+    button{
+        background: var(--Primary-clr);
+        border-color: var(--Primary-clr);
+        height: max-content;
+        width: max-content;
+
+        &:hover{
+            background: #7800f0;
+        }
+
+        &:focus{
+            background: #7800f0;
+        }
+    }
+
+
+    img{
+        max-width: 100%;
+    }
+}
